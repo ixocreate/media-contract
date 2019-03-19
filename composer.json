@@ -1,0 +1,31 @@
+{
+  "name": "ixocreate/media-contract",
+  "description": "Media contracts for IXOCREATE",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "IXOCREATE"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.1",
+    "ext-json": "*",
+    "ixocreate/servicemanager-contract": "dev-develop"
+  },
+  "require-dev": {
+    "ixocreate/coding-standard": "^1.0.1",
+    "php-coveralls/php-coveralls": "^2.1",
+    "phpunit/phpunit": "^6.0.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ixocreate\\Contract\\Registry\\": "src/"
+    }
+  },
+  "scripts": {
+    "fix-cs": "vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --config vendor/ixocreate/coding-standard/.php_cs"
+  }
+}
