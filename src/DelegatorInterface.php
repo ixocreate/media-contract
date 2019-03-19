@@ -14,10 +14,10 @@ use Ixocreate\Contract\ServiceManager\NamedServiceInterface;
 interface DelegatorInterface extends NamedServiceInterface
 {
     /**
-     * @param Media $media
+     * @param MediaInterface $media
      * @return bool
      */
-    public function isResponsible(Media $media): bool;
+    public function isResponsible(MediaInterface $media): bool;
 
     /**
      * @return array
@@ -25,7 +25,7 @@ interface DelegatorInterface extends NamedServiceInterface
     public function directories(): array;
 
     /**
-     * @param Media $media
+     * @param MediaInterface $media
      */
-    public function process(Media $media): void;
+    public function process(MediaInterface $media): void;
 }
