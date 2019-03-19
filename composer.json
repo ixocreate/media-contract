@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Ixocreate\\Contract\\Registry\\": "src/"
+      "Ixocreate\\Contract\\Media\\": "src/"
     }
   },
   "scripts": {
