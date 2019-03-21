@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Ixocreate\Contract\Media;
 
 use Ixocreate\Contract\ServiceManager\NamedServiceInterface;
+use League\Flysystem\FilesystemInterface;
 
 interface DelegatorInterface extends NamedServiceInterface
 {
@@ -26,6 +27,7 @@ interface DelegatorInterface extends NamedServiceInterface
 
     /**
      * @param MediaInterface $media
+     * @param FilesystemInterface $storage
      */
     public function process(MediaInterface $media): void;
 }
